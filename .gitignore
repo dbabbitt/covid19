@@ -1,31 +1,96 @@
+
+# C:\Users\dev\Documents\repositories\covid19\.gitignore
+
+# Ignore files that contain harddrive-specific information
+data/xlsx/API_SH.MED.BEDS.ZS_DS2_en_excel_v2_988704.xlsx
+environment.yml
+ipynb/Realtime R0 among the Nations.ipynb
+ipynb/Realtime R0.ipynb
+ipynb/date.ipynb
+jupyter_notebook_config.py
+notepad_session.xml
+ps1/run_jupyter_lab.ps1
+saves/csv/states_df.csv
+
+# Ignore whole folders
+**/.git/
+data/csv
+data/gpw-v4-population-count-rev11_2020_30_sec_asc
+data/tif
+saves/pickle/hub_*
+whl
+
+# Ignore big files (GitHub will warn you when pushing files larger than 50 MB. You will not be allowed to
+# push files larger than 100 MB.) Tip: If you regularly push large files to GitHub, consider introducing
+# Git Large File Storage (Git LFS) as part of your workflow.
+data/csv/linelist.csv
+data/usa_gpwv3_pdens_ascii_25/usads00ag.asc
+data/usa_gpwv3_pdens_ascii_25/usads00g.asc
+data/usa_gpwv3_pdens_ascii_25/usads90ag.asc
+data/usa_gpwv3_pdens_ascii_25/usads90g.asc
+data/usa_gpwv3_pdens_ascii_25/usads95ag.asc
+data/usa_gpwv3_pdens_ascii_25/usads95g.asc
+
+# Exclude COVID-19 code that I didn't write (or too messy)
+data/csv/20200326-sitrep-66-covid-19.csv
+data/csv/NCHSData13.csv
+data/csv/daily.csv
+data/csv/rt.csv
+data/html/annual-average-humidity-by-state.html
+data/html/humidity-city-march.html
+data/html/worldometers_coronavirus.html
+data/mplstyles/VeraMono.ttf
+data/pdf/
+data/txt/
+data/usa_gpwv3_pdens_ascii_25/
+data/usa_gpwv3_pdens_wrk_25/
+data/xlsx/annual-average-humidity-by-state.xlsx
+data/xlsx/co-est2019-annres.xlsx
+data/xlsx/humidity-city-march.xlsx
+data/zip/
+ipynb/0704 - Creating a Dot Density Map.ipynb
+ipynb/Realtime R0 among the US States.ipynb
+ipynb/Realtime Rt mcmc.ipynb
+ipynb/US County Population Density-Copy1.ipynb
+py/DiseaseBoard.py
+py/images/Illustration-1.png
+py/images/Illustration-2.png
+py/images/Models.png
+py/spread.py
+saves/csv/rt_old.csv
+saves/pgf/example_2_1_3d_bar_chart.pgf
+saves/pgf/example_2_1_heat_map.pgf
+saves/png/
+saves/svg/Worldmap_northern.svg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
 *$py.class
+*.py[cod]
 
 # C extensions
 *.so
 
 # Distribution / packaging
+*.egg
+*.egg-info/
 .Python
+.eggs/
+.installed.cfg
+MANIFEST
 build/
 develop-eggs/
 dist/
 downloads/
 eggs/
-.eggs/
 lib/
 lib64/
 parts/
+pip-wheel-metadata/
 sdist/
+share/python-wheels/
 var/
 wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -34,22 +99,22 @@ MANIFEST
 *.spec
 
 # Installer logs
-pip-log.txt
 pip-delete-this-directory.txt
+pip-log.txt
 
 # Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
 *.cover
 *.py,cover
+.cache
+.coverage
+.coverage.*
 .hypothesis/
+.nox/
 .pytest_cache/
+.tox/
+coverage.xml
+htmlcov/
+nosetests.xml
 
 # Translations
 *.mo
@@ -57,13 +122,13 @@ coverage.xml
 
 # Django stuff:
 *.log
-local_settings.py
 db.sqlite3
 db.sqlite3-journal
+local_settings.py
 
 # Flask stuff:
-instance/
 .webassets-cache
+instance/
 
 # Scrapy stuff:
 .scrapy
@@ -78,8 +143,8 @@ target/
 .ipynb_checkpoints
 
 # IPython
-profile_default/
 ipython_config.py
+profile_default/
 
 # pyenv
 .python-version
@@ -104,11 +169,11 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
-venv/
 ENV/
 env.bak/
+env/
 venv.bak/
+venv/
 
 # Spyder project settings
 .spyderproject
@@ -121,8 +186,8 @@ venv.bak/
 /site
 
 # mypy
-.mypy_cache/
 .dmypy.json
+.mypy_cache/
 dmypy.json
 
 # Pyre type checker
