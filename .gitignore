@@ -63,6 +63,9 @@ saves/pgf/example_2_1_heat_map.pgf
 saves/png/
 saves/svg/Worldmap_northern.svg
 
+# Exclude secrets
+**/json/*_secrets.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *$py.class

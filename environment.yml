@@ -3,19 +3,33 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python>3.7.0
-  - pandas>1.0.0
-  - conda
-  - conda-build
+  - bs4
+  - cycler
   - geopandas
   - html5lib
+  - imageio
   - ipykernel
   - ipython
   - jupyter
+  - jupyter_core
+  - jupyterlab
   - lxml
   - matplotlib
+  - networkx
+  - nltk
+  - notebook
   - numpy
+  - openpyxl
+  - pandas>1.0.0
+  - pillow
   - pip
+  - pycurl
+  - pydub
+  - pyperclip
+  - pyphen
+  - python>3.7.0
+  - requests
+  - scikit-learn
   - scipy
   - seaborn
   - selenium
@@ -23,5 +37,13 @@ dependencies:
   - statsmodels
   - svgutils
   - tqdm
+  - traitlets
   - wikipedia
   - xlrd
+  - pip:
+    - mathutils
+    - pdfminer
+    - qwikidata
+    - svgpathtools
+    - wikidata
+    - wptools
