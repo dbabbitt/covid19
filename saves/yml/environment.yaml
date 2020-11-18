@@ -1,0 +1,5 @@
+name: rpc
+channels:
+  - conda-forge
+  - defaults
+prefix: C:\Users\dev\anaconda3\envs\covid19\envs\rpc

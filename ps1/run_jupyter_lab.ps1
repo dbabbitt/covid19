@@ -23,7 +23,7 @@ Write-Host ""
 Write-Host "---------------------------------------------------------------------------------" -ForegroundColor Green
 Write-Host "                          Getting the Jupyter Lab token" -ForegroundColor Green
 Write-Host "---------------------------------------------------------------------------------" -ForegroundColor Green
-$TokenRegex = [regex] '(?m)http://0\.0\.0\.0:8888/\?token=([^ ]+) :: '
+$TokenRegex = [regex] '(?m)http://localhost:8888/\?token=([^ ]+) :: '
 $ListResults = (jupyter notebook list) | Out-String
 $TokenString = $TokenRegex.Match($ListResults).Groups[1].Value
 Write-Host $ListResults
