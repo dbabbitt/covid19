@@ -826,3 +826,26 @@ class StatsScrapingUtilities(object):
             list_str = ''
         
         return list_str
+    
+    
+    
+    def get_color_cycler(self, n, verbose=False):
+        """
+        color_cycler = ssu.get_color_cycler(len(possible_cause_list))
+        for possible_cause, face_color_dict in zip(possible_cause_list, color_cycler()):
+            face_color = face_color_dict['color']
+        """
+        from cycler import cycler
+        import matplotlib.pyplot as plt
+        import numpy as np
+        color_cycler = None
+        if n < 9:
+            color_cycler = cycler('color', plt.cm.Accent(np.linspace(0, 1, n)))
+        elif n < 11:
+            color_cycler = cycler('color', plt.cm.tab10(np.linspace(0, 1, n)))
+        elif n < 13:
+            color_cycler = cycler('color', plt.cm.Paired(np.linspace(0, 1, n)))
+        else:
+            color_cycler = cycler('color', plt.cm.tab20(np.linspace(0, 1, n)))
+        
+        return color_cycler
