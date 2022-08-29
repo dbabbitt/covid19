@@ -34,6 +34,8 @@ colormaps_list = ['Accent', 'Accent_r', 'Blues', 'Blues_r', 'BrBG', 'BrBG_r', 'B
                   'spring_r', 'summer', 'summer_r', 'tab10', 'tab10_r', 'tab20', 'tab20_r', 'tab20b', 'tab20b_r', 'tab20c',
                   'tab20c_r', 'terrain', 'terrain_r', 'twilight', 'twilight_r', 'twilight_shifted', 'twilight_shifted_r',
                   'viridis', 'viridis_r', 'vlag', 'vlag_r', 'winter', 'winter_r']
+
+# Width-to-height ratios
 FACEBOOK_ASPECT_RATIO = 1.91
 TWITTER_ASPECT_RATIO = 16/9
 
