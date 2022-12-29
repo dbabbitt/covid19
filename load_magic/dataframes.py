@@ -1,6 +1,10 @@
 
 #!/usr/bin/env python
 # DataFrame utility functions via reading HTML including scraping web pages using bs4.
+# Use it something like this:
+#
+# %run ../load_magic/dataframes.py
+#
 # Dave Babbitt <dave.babbitt@gmail.com>
 # Author: Dave Babbitt, Data Scientist
 # coding: utf-8
@@ -27,7 +31,6 @@ import urllib
 
 URL_REGEX = re.compile(r'\b(https?|file)://[-A-Z0-9+&@#/%?=~_|$!:,.;]*[A-Z0-9+&@#/%=~_|$]', re.IGNORECASE)
 FILEPATH_REGEX = re.compile(r'\b[c-d]:\\(?:[^\\/:*?"<>|\x00-\x1F]{0,254}[^.\\/:*?"<>|\x00-\x1F]\\)*(?:[^\\/:*?"<>|\x00-\x1F]{0,254}[^.\\/:*?"<>|\x00-\x1F])', re.IGNORECASE)
-
 
 def get_page_soup(page_url_or_filepath, verbose=True):
     match_obj = URL_REGEX.search(page_url_or_filepath)
